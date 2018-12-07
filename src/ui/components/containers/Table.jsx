@@ -1,12 +1,9 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
+import Table from '../presentationals/Table';
 
-const Table = props => (
-  <div>
-    <p>{props.drmName}</p>
-  </div>
-)
+const TableContainer = props => <Table {...props}/>;
 
 function mapStateToProps(state) {
   return {
@@ -16,4 +13,4 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-)(Table)
+)(TableContainer)
