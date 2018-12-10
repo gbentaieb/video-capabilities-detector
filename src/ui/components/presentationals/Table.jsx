@@ -44,6 +44,7 @@ function createData(name, value) {
 const getRows = (data) => [
   createData('Drm Name', data.drmName),
   createData('Drm Security', data.drmSecurity),
+  createData('Supported HDCP level', data.hdcpLevel),
 ];
 
 function CustomizedTable(props) {
@@ -80,6 +81,7 @@ CustomizedTable.propTypes = {
   classes: PropTypes.object.isRequired,
   drmName: PropTypes.string,
   drmSecurity: PropTypes.string,
+  hdcpLevel: PropTypes.string,
 };
 
 export default withStyles(styles)(CustomizedTable);

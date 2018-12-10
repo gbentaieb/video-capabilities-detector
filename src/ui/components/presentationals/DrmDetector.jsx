@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getDrmCapabilities } from '../../utils/drm';
+import { getDrmInfos } from '../../utils/drm';
 
 class DrmDetector extends Component {
   static propTypes = {
@@ -8,11 +8,11 @@ class DrmDetector extends Component {
   }
 
   componentWillMount() {
-    this.detectDrmCapabilities();
+    this.detectDrmProperties();
   }
 
-  async detectDrmCapabilities() {
-    const capabilities = await getDrmCapabilities();
+  async detectDrmProperties() {
+    const capabilities = await getDrmInfos();
     
     this.props.setDrmProperties(capabilities);
   }

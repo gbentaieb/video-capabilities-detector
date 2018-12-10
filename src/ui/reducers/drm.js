@@ -12,6 +12,7 @@ export default function drmReducer(state = initialState, action = {}) {
         ...state,
         drmName: action.payload.drmName,
         drmSecurity: action.payload.drmSecurity,
+        hdcpLevel: action.payload.hdcpLevel,
       };
     default:
       return state;
