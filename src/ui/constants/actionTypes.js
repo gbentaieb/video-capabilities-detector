@@ -1,1 +1,1 @@
-export const SET_DRM_NAME = 'SET_DRM_NAME';
+export const SET_DRM_PROPERTIES = 'SET_DRM_PROPERTIES';

@@ -43,6 +43,7 @@ function createData(name, value) {
 
 const getRows = (data) => [
   createData('Drm Name', data.drmName),
+  createData('Drm Security', data.drmSecurity),
 ];
 
 function CustomizedTable(props) {
@@ -77,6 +78,8 @@ function CustomizedTable(props) {
 
 CustomizedTable.propTypes = {
   classes: PropTypes.object.isRequired,
+  drmName: PropTypes.string,
+  drmSecurity: PropTypes.string,
 };
 
 export default withStyles(styles)(CustomizedTable);

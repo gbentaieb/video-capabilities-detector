@@ -8,6 +8,7 @@ const TableContainer = props => <Table {...props}/>;
 function mapStateToProps(state) {
   return {
     drmName: state.drm.drmName,
+    drmSecurity: state.drm.drmSecurity,
   };
 } 
 

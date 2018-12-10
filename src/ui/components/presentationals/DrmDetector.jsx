@@ -4,7 +4,7 @@ import { getDrmCapabilities } from '../../utils/drm';
 
 class DrmDetector extends Component {
   static propTypes = {
-    setDrmName: PropTypes.func.isRequired,
+    setDrmProperties: PropTypes.func.isRequired,
   }
 
   componentWillMount() {
@@ -14,7 +14,7 @@ class DrmDetector extends Component {
   async detectDrmCapabilities() {
     const capabilities = await getDrmCapabilities();
     
-    this.props.setDrmName(capabilities.drmName);
+    this.props.setDrmProperties(capabilities);
   }
 
   render() {

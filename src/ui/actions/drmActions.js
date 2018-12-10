@@ -1,8 +1,8 @@
-import { SET_DRM_NAME } from '../constants/actionTypes';
+import { SET_DRM_PROPERTIES } from '../constants/actionTypes';
 
-export function setDrmName(name) {
+export function setDrmProperties(name) {
   return {
-    type: SET_DRM_NAME,
+    type: SET_DRM_PROPERTIES,
     payload: name,
   };
 }
