@@ -214,6 +214,7 @@ export async function getPlayreadyCapabilities() {
       return {
         ...ksAccess,
         ...ksAccess.getConfiguration(),
+        keySystem: drmMimeType,
         hdcpLevel: hdcpLevelFromMediaKeys === 'none'
           ? hdcpLevelFromMSMediaKeys
           : hdcpLevelFromMSMediaKeys,
