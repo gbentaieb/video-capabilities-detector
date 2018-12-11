@@ -9,6 +9,7 @@ function mapStateToProps(state) {
   return {
     drmName: state.drm.drmName,
     drmSecurity: state.drm.drmSecurity,
+    drmCanPersistState: state.drm.drmCanPersistState,
     hdcpLevel: state.drm.hdcpLevel,
   };
 } 

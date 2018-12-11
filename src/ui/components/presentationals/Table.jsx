@@ -45,6 +45,7 @@ const getRows = (data) => [
   createData('Drm Name', data.drmName),
   createData('Drm Security', data.drmSecurity),
   createData('Supported HDCP level', data.hdcpLevel),
+  createData('Persistent state enabled (can be used for tracking purposes)', data.drmCanPersistState),
 ];
 
 function CustomizedTable(props) {
@@ -81,6 +82,7 @@ CustomizedTable.propTypes = {
   classes: PropTypes.object.isRequired,
   drmName: PropTypes.string,
   drmSecurity: PropTypes.string,
+  drmCanPersistState: PropTypes.string,
   hdcpLevel: PropTypes.string,
 };
 

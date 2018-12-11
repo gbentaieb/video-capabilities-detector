@@ -3,6 +3,8 @@ import { SET_DRM_PROPERTIES } from '../constants/actionTypes';
 const initialState = {
   drmName: null,
   drmSecurity: null,
+  hdcpLevel: null,
+  drmCanPersistState: null,
 };
 
 export default function drmReducer(state = initialState, action = {}) {
@@ -13,6 +15,7 @@ export default function drmReducer(state = initialState, action = {}) {
         drmName: action.payload.drmName,
         drmSecurity: action.payload.drmSecurity,
         hdcpLevel: action.payload.hdcpLevel,
+        drmCanPersistState: action.payload.drmCanPersistState,
       };
     default:
       return state;

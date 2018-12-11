@@ -117,11 +117,19 @@ export function getCencKeySystemConfigurations(drmName) {
     });
   });
 
-  return [{
+  return [
+    {
     initDataTypes: ['cenc'],
     videoCapabilities,
     audioCapabilities,
-  }];
+    persistentState: 'required',
+    },
+    {
+      initDataTypes: ['cenc'],
+      videoCapabilities,
+      audioCapabilities,
+    }
+  ];
 }
 
 /**
@@ -134,6 +142,7 @@ export function extractPlayreadyDrmInfoFromCapabilities(capabilities) {
   return {
     drmName: 'playready',
     drmSecurity: capabilities.keySystem.includes('hardware') ? 'hardware' : 'software',
+    drmCanPersistState: capabilities.persistentState === 'required' ? 'yes' : 'no',
     hdcpLevel: capabilities.hdcpLevel,
   }
 }
@@ -150,6 +159,7 @@ export function extractWidevineDrmInfoFromCapabilities(capabilities) {
   return {
     drmName: 'widevine',
     drmSecurity: isHardware ? 'hardware' : 'software',
+    drmCanPersistState: capabilities.persistentState === 'required' ? 'yes' : 'no',
     hdcpLevel: capabilities.hdcpLevel,
   }
 }
@@ -208,6 +218,7 @@ export async function getFairplayInfos() {
   return {
     drmName: 'fairplay',
     drmSecurity: 'hardware',
+    drmCanPersistState: 'yes',
     hdcpLevel: 'Unable to detect',
   }
 }
