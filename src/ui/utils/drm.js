@@ -25,15 +25,15 @@ const WIDEVINE_ROBUSTNESSES = [
 // Existing HDCP levels
 // This list is ordered from more secure to less secure
 const HDCP_LEVELS = [
-  'hdcp-2.3',
-  'hdcp-2.2',
-  'hdcp-2.1',
-  'hdcp-2.0',
-  'hdcp-1.4',
-  'hdcp-1.3',
-  'hdcp-1.2',
-  'hdcp-1.1',
-  'hdcp-1.0',
+  '2.3',
+  '2.2',
+  '2.1',
+  '2.0',
+  '1.4',
+  '1.3',
+  '1.2',
+  '1.1',
+  '1.0',
 ];
 
 // Drm attributes if drm detection fails
@@ -69,7 +69,7 @@ export async function getHdcpLevelFromMediaKeys(mediaKeys) {
     const hdcpLevel = HDCP_LEVELS[i];
 
     try {
-      const status = await mediaKeys.getStatusForPolicy({ minHdcpVersion: hdcpLevel });
+      const status = await mediaKeys.getStatusForPolicy({ minHdcpVersion: `hdcp-${hdcpLevel}` });
 
       if (status === 'usable') {
         return hdcpLevel;
@@ -80,6 +80,20 @@ export async function getHdcpLevelFromMediaKeys(mediaKeys) {
   }
 
   return 'none';
+}
+
+export async function getHdcpLevelFromMSMediaKeys() {
+  if (!window.MSMediaKeys) return 'none';
+
+  for (let i = 0; i < HDCP_LEVELS.length; i += 1) {
+    const hdcpLevel = HDCP_LEVELS[i];
+    const hdcpSupported = window.MSMediaKeys.isTypeSupportedWithFeatures(
+      'com.microsoft.playready',
+      `video/mp4;features="hdcp=${hdcpLevel}"`
+    )
+
+    if (hdcpSupported === 'maybe') return hdcpLevel;
+  }
 }
 
 /**
@@ -194,9 +208,16 @@ export async function getPlayreadyCapabilities() {
 
     if (ksAccess) {
       const mediaKeys = await ksAccess.createMediaKeys();
-      const hdcpLevel = await getHdcpLevelFromMediaKeys(mediaKeys);
+      const hdcpLevelFromMediaKeys = await getHdcpLevelFromMediaKeys(mediaKeys);
+      const hdcpLevelFromMSMediaKeys = await getHdcpLevelFromMSMediaKeys();
 
-      return { ...ksAccess, ...ksAccess.getConfiguration(), hdcpLevel };
+      return {
+        ...ksAccess,
+        ...ksAccess.getConfiguration(),
+        hdcpLevel: hdcpLevelFromMediaKeys === 'none'
+          ? hdcpLevelFromMSMediaKeys
+          : hdcpLevelFromMSMediaKeys,
+      };
     }
   }
 

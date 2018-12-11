@@ -11,6 +11,8 @@ function mapStateToProps(state) {
     drmSecurity: state.drm.drmSecurity,
     drmCanPersistState: state.drm.drmCanPersistState,
     hdcpLevel: state.drm.hdcpLevel,
+    protectedContentMaxBandwidth: state.maxBandwidth.protectedContent,
+    unprotectedContentMaxBandwidth: state.maxBandwidth.unprotectedContent,
   };
 } 
 

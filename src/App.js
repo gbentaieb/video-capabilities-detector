@@ -8,6 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import store from './ui/store';
 import Table from './ui/components/containers/Table';
 import DrmDetector from './ui/components/containers/DrmDetector';
+import MaxBandwidthDetector from './ui/components/containers/MaxBandwidthDetector';
 
 import './App.css';
 
@@ -32,6 +33,7 @@ class App extends Component {
           </AppBar>
           <Table />
           <DrmDetector />
+          <MaxBandwidthDetector />
         </div>
       </Provider>
     );
