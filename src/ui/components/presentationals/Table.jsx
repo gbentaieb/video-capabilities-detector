@@ -55,6 +55,7 @@ const getRows = (data) => [
     'Maximum quality for protected content (eg. Netflix)',
     getMaxBandwidthDisplayedValue(data.protectedContentMaxBandwidth),
   ),
+  createData('Recommended browser', data.recommendedBrowser),
 ];
 
 function CustomizedTable(props) {
@@ -95,6 +96,7 @@ CustomizedTable.propTypes = {
   hdcpLevel: PropTypes.string,
   protectedContentMaxBandwidth: PropTypes.string,
   unprotectedContentMaxBandwidth: PropTypes.string,
+  recommendedBrowser: PropTypes.string,
 };
 
 export default withStyles(styles)(CustomizedTable);

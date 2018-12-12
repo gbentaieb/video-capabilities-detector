@@ -9,6 +9,7 @@ import store from './ui/store';
 import Table from './ui/components/containers/Table';
 import DrmDetector from './ui/components/containers/DrmDetector';
 import MaxBandwidthDetector from './ui/components/containers/MaxBandwidthDetector';
+import BrowserDetector from './ui/components/containers/BrowserDetector';
 
 import './App.css';
 
@@ -34,6 +35,7 @@ class App extends Component {
           <Table />
           <DrmDetector />
           <MaxBandwidthDetector />
+          <BrowserDetector />
         </div>
       </Provider>
     );

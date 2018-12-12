@@ -13,6 +13,7 @@ function mapStateToProps(state) {
     hdcpLevel: state.drm.hdcpLevel,
     protectedContentMaxBandwidth: state.maxBandwidth.protectedContent,
     unprotectedContentMaxBandwidth: state.maxBandwidth.unprotectedContent,
+    recommendedBrowser: state.browser.recommended,
   };
 } 
 
