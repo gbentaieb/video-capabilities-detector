@@ -1,44 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Video Capabilities Detector
 
-## Available Scripts
+Eager to know about your device video capabilities ? Just checkout [this page](https://gbentaieb.github.io/video-capacities-detector/) !!
 
-In the project directory, you can run:
+## Introduction
+It can be difficult to know what are the video capabilities of your device. Some of the questions you might have are:
+  - Is my device able to play protected content ?
+  - Does my device have a robust drm implementation ?
+  - Does my device support hdcp ?
+  - What codecs are supported by my device ?
+  - What video quality can I expect to get with my device
+  - What is the best navigator to use with my device to get the best video quality
+  - ...
 
-### `npm start`
+This very simple app aims to answer all of those questions and more !
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How do we determine the capabilities of your device
+To determine the capabilities of your device, we use the appropriate native js APIs provided by the browsers. This includes (but is not restricted to):
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- navigator.requestMediaKeySystemAccess : for drm support in Chrome, Edge/IE, Firefox (W3C standard api)
 
-### `npm test`
+- window.WebKitMediaKeys : for drm support in Safari (webkit api)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- mediaKeys.getStatusForPolicy : for hdcp detection (W3C standard api)
 
-### `npm run build`
+- MSMediaKeys.isTypeSupportedWithFeature: for hdcp detection in Edge/IE (Microsoft api)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTMLMediaElement.canPlayType() : for codec support (W3C standard api)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## DEMO
+This demo is hosted [this page](https://gbentaieb.github.io/video-capacities-detector/)
