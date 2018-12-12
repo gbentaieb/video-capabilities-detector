@@ -17,13 +17,13 @@ This very simple app aims to answer all of those questions and more !
 ## How do we determine the capabilities of your device
 To determine the capabilities of your device, we use the appropriate native js APIs provided by the browsers. This includes (but is not restricted to):
 
-- navigator.requestMediaKeySystemAccess : for drm support in Chrome, Edge/IE, Firefox (W3C standard api)
+- navigator.requestMediaKeySystemAccess() : for drm support in Chrome, Edge/IE, Firefox (W3C standard api)
 
-- window.WebKitMediaKeys : for drm support in Safari (webkit api)
+- window.WebKitMediaKeys() : for drm support in Safari (webkit api)
 
-- mediaKeys.getStatusForPolicy : for hdcp detection (W3C standard api)
+- mediaKeys.getStatusForPolicy() : for hdcp detection (W3C standard api)
 
-- MSMediaKeys.isTypeSupportedWithFeature: for hdcp detection in Edge/IE (Microsoft api)
+- MSMediaKeys.isTypeSupportedWithFeature(): for hdcp detection in Edge/IE (Microsoft api)
 
 - HTMLMediaElement.canPlayType() : for codec support (W3C standard api)
 
