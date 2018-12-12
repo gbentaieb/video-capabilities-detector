@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/video-capacities-detector/static/css/main.67d7b866.chunk.css"
   },
   {
-    "revision": "0f741601b9ec528830c928ac9016e5a6",
+    "revision": "e9b7fc3843338413e60d616f46543e1e",
     "url": "/video-capacities-detector/index.html"
   }
 ];
