@@ -2,9 +2,9 @@ import { detect } from 'detect-browser';
 
 const BROWSER = detect();
 const CODECS = {
-  avc: 'video/mp4; codecs="avc1"',
+  h264: 'video/mp4; codecs="avc1.4d401e"',
   hevc: 'video/mp4; codecs="hvc1"',
-  vp8: 'video/mp4; codecs="vp08"',
+  vp8: 'video/webm; codecs="vp8, vorbis"',
   vp9: 'video/mp4; codecs="vp09.00.50.08"',
   av1: 'video/mp4; codecs="av01.0.08M.08"',
 }
