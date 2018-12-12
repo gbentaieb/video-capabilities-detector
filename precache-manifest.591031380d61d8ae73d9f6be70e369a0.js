@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/video-capabilities-detector/static/js/runtime~main.e7005970.js"
   },
   {
-    "revision": "d13abd6d0cf7029f0dcf",
-    "url": "/video-capabilities-detector/static/js/main.d13abd6d.chunk.js"
+    "revision": "43eff38ea0c99d84def9",
+    "url": "/video-capabilities-detector/static/js/main.43eff38e.chunk.js"
   },
   {
     "revision": "45fe37bfa47d1ac07fb8",
     "url": "/video-capabilities-detector/static/js/1.45fe37bf.chunk.js"
   },
   {
-    "revision": "d13abd6d0cf7029f0dcf",
+    "revision": "43eff38ea0c99d84def9",
     "url": "/video-capabilities-detector/static/css/main.241a2ae8.chunk.css"
   },
   {
-    "revision": "ed4446935311e91e8388a7259ea9f95a",
+    "revision": "03bd355124d7d8e5d23acede6919cc80",
     "url": "/video-capabilities-detector/index.html"
   }
 ];
