@@ -1,13 +1,13 @@
 {
-  "main.css": "/video-capabilities-detector/static/css/main.67d7b866.chunk.css",
-  "main.js": "/video-capabilities-detector/static/js/main.34bba9b3.chunk.js",
-  "main.js.map": "/video-capabilities-detector/static/js/main.34bba9b3.chunk.js.map",
+  "main.css": "/video-capabilities-detector/static/css/main.241a2ae8.chunk.css",
+  "main.js": "/video-capabilities-detector/static/js/main.d13abd6d.chunk.js",
+  "main.js.map": "/video-capabilities-detector/static/js/main.d13abd6d.chunk.js.map",
   "static/js/1.45fe37bf.chunk.js": "/video-capabilities-detector/static/js/1.45fe37bf.chunk.js",
   "static/js/1.45fe37bf.chunk.js.map": "/video-capabilities-detector/static/js/1.45fe37bf.chunk.js.map",
   "runtime~main.js": "/video-capabilities-detector/static/js/runtime~main.e7005970.js",
   "runtime~main.js.map": "/video-capabilities-detector/static/js/runtime~main.e7005970.js.map",
-  "static/css/main.67d7b866.chunk.css.map": "/video-capabilities-detector/static/css/main.67d7b866.chunk.css.map",
+  "static/css/main.241a2ae8.chunk.css.map": "/video-capabilities-detector/static/css/main.241a2ae8.chunk.css.map",
   "index.html": "/video-capabilities-detector/index.html",
-  "precache-manifest.c576a1d3531024f8cf37dc58e873b79e.js": "/video-capabilities-detector/precache-manifest.c576a1d3531024f8cf37dc58e873b79e.js",
+  "precache-manifest.1a29ee6bbcbfe9156cea00f6cad776ed.js": "/video-capabilities-detector/precache-manifest.1a29ee6bbcbfe9156cea00f6cad776ed.js",
   "service-worker.js": "/video-capabilities-detector/service-worker.js"
 }
