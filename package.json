@@ -2,7 +2,7 @@
   "name": "video-capacity-detector",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gbentaieb.github.io/video-capacities-detector",
+  "homepage": "https://gbentaieb.github.io/video-capabilities-detector",
   "dependencies": {
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.1",

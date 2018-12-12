@@ -1,6 +1,6 @@
 # Video Capabilities Detector
 
-Eager to know about your device video capabilities ? Just checkout [this page](https://gbentaieb.github.io/video-capacities-detector/) !!
+Eager to know about your device video capabilities ? Just checkout [this page](https://gbentaieb.github.io/video-capabilities-detector/) !!
 
 ## Introduction
 It can be difficult to know what are the video capabilities of your device. Some of the questions you might have are:
@@ -28,4 +28,4 @@ To determine the capabilities of your device, we use the appropriate native js A
 - HTMLMediaElement.canPlayType() : for codec support (W3C standard api)
 
 ## DEMO
-This demo is hosted [this page](https://gbentaieb.github.io/video-capacities-detector/)
+This demo is hosted [this page](https://gbentaieb.github.io/video-capabilities-detector/)
