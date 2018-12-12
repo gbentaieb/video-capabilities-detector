@@ -1,13 +1,13 @@
 {
   "main.css": "/video-capacities-detector/static/css/main.67d7b866.chunk.css",
-  "main.js": "/video-capacities-detector/static/js/main.c5fefd13.chunk.js",
-  "main.js.map": "/video-capacities-detector/static/js/main.c5fefd13.chunk.js.map",
-  "static/js/1.8d44dbfd.chunk.js": "/video-capacities-detector/static/js/1.8d44dbfd.chunk.js",
-  "static/js/1.8d44dbfd.chunk.js.map": "/video-capacities-detector/static/js/1.8d44dbfd.chunk.js.map",
+  "main.js": "/video-capacities-detector/static/js/main.8a1a4f9e.chunk.js",
+  "main.js.map": "/video-capacities-detector/static/js/main.8a1a4f9e.chunk.js.map",
+  "static/js/1.45fe37bf.chunk.js": "/video-capacities-detector/static/js/1.45fe37bf.chunk.js",
+  "static/js/1.45fe37bf.chunk.js.map": "/video-capacities-detector/static/js/1.45fe37bf.chunk.js.map",
   "runtime~main.js": "/video-capacities-detector/static/js/runtime~main.80d5a0a4.js",
   "runtime~main.js.map": "/video-capacities-detector/static/js/runtime~main.80d5a0a4.js.map",
   "static/css/main.67d7b866.chunk.css.map": "/video-capacities-detector/static/css/main.67d7b866.chunk.css.map",
   "index.html": "/video-capacities-detector/index.html",
-  "precache-manifest.bbb60fb96e5a10379dde1a12045927fc.js": "/video-capacities-detector/precache-manifest.bbb60fb96e5a10379dde1a12045927fc.js",
+  "precache-manifest.fa484f8a6f1d2b5b3c590871a6d366a4.js": "/video-capacities-detector/precache-manifest.fa484f8a6f1d2b5b3c590871a6d366a4.js",
   "service-worker.js": "/video-capacities-detector/service-worker.js"
 }
