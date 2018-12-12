@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/video-capacities-detector/precache-manifest.fa484f8a6f1d2b5b3c590871a6d366a4.js"
+  "/video-capabilities-detector/precache-manifest.c576a1d3531024f8cf37dc58e873b79e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/video-capacities-detector/index.html", {
+workbox.routing.registerNavigationRoute("/video-capabilities-detector/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

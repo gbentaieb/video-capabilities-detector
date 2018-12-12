@@ -1,13 +1,13 @@
 {
-  "main.css": "/video-capacities-detector/static/css/main.67d7b866.chunk.css",
-  "main.js": "/video-capacities-detector/static/js/main.8a1a4f9e.chunk.js",
-  "main.js.map": "/video-capacities-detector/static/js/main.8a1a4f9e.chunk.js.map",
-  "static/js/1.45fe37bf.chunk.js": "/video-capacities-detector/static/js/1.45fe37bf.chunk.js",
-  "static/js/1.45fe37bf.chunk.js.map": "/video-capacities-detector/static/js/1.45fe37bf.chunk.js.map",
-  "runtime~main.js": "/video-capacities-detector/static/js/runtime~main.80d5a0a4.js",
-  "runtime~main.js.map": "/video-capacities-detector/static/js/runtime~main.80d5a0a4.js.map",
-  "static/css/main.67d7b866.chunk.css.map": "/video-capacities-detector/static/css/main.67d7b866.chunk.css.map",
-  "index.html": "/video-capacities-detector/index.html",
-  "precache-manifest.fa484f8a6f1d2b5b3c590871a6d366a4.js": "/video-capacities-detector/precache-manifest.fa484f8a6f1d2b5b3c590871a6d366a4.js",
-  "service-worker.js": "/video-capacities-detector/service-worker.js"
+  "main.css": "/video-capabilities-detector/static/css/main.67d7b866.chunk.css",
+  "main.js": "/video-capabilities-detector/static/js/main.34bba9b3.chunk.js",
+  "main.js.map": "/video-capabilities-detector/static/js/main.34bba9b3.chunk.js.map",
+  "static/js/1.45fe37bf.chunk.js": "/video-capabilities-detector/static/js/1.45fe37bf.chunk.js",
+  "static/js/1.45fe37bf.chunk.js.map": "/video-capabilities-detector/static/js/1.45fe37bf.chunk.js.map",
+  "runtime~main.js": "/video-capabilities-detector/static/js/runtime~main.e7005970.js",
+  "runtime~main.js.map": "/video-capabilities-detector/static/js/runtime~main.e7005970.js.map",
+  "static/css/main.67d7b866.chunk.css.map": "/video-capabilities-detector/static/css/main.67d7b866.chunk.css.map",
+  "index.html": "/video-capabilities-detector/index.html",
+  "precache-manifest.c576a1d3531024f8cf37dc58e873b79e.js": "/video-capabilities-detector/precache-manifest.c576a1d3531024f8cf37dc58e873b79e.js",
+  "service-worker.js": "/video-capabilities-detector/service-worker.js"
 }
