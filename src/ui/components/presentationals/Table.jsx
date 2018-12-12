@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { getMaxBandwidthDisplayedValue } from '../../utils/maxBandwidth';
+import { getSupportedCodecsDisplayedValue } from '../../utils/browser';
 
 const CustomTableCell = withStyles(theme => ({
   head: {
@@ -47,6 +48,10 @@ const getRows = (data) => [
   createData('Drm Security', data.drmSecurity),
   createData('Supported HDCP level', data.hdcpLevel),
   createData('Persistent state enabled (can be used for tracking purposes)', data.drmCanPersistState),
+  createData(
+    'Supported codecs',
+    getSupportedCodecsDisplayedValue(data.supportedCodecs),
+  ),
   createData(
     'Maximum quality for unprotected content (eg. Youtube)',
     getMaxBandwidthDisplayedValue(data.unprotectedContentMaxBandwidth),

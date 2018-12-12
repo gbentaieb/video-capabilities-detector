@@ -14,6 +14,7 @@ function mapStateToProps(state) {
     protectedContentMaxBandwidth: state.maxBandwidth.protectedContent,
     unprotectedContentMaxBandwidth: state.maxBandwidth.unprotectedContent,
     recommendedBrowser: state.browser.recommended,
+    supportedCodecs: state.browser.supportedCodecs,
   };
 } 
 

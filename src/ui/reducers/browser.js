@@ -5,6 +5,7 @@ const initialState = {
   version: null,
   os: null,
   recommended: null,
+  supportedCodecs: null,
 };
 
 export default function drmReducer(state = initialState, action = {}) {
@@ -16,6 +17,7 @@ export default function drmReducer(state = initialState, action = {}) {
         version: action.payload.version,
         os: action.payload.os,
         recommended: action.payload.recommended,
+        supportedCodecs: action.payload.supportedCodecs,
       };
     default:
       return state;
