@@ -69,7 +69,7 @@ export async function getHdcpLevelFromMediaKeys(mediaKeys) {
     const hdcpLevel = HDCP_LEVELS[i];
 
     try {
-      const status = await mediaKeys.getStatusForPolicy({ minHdcpVersion: `hdcp-${hdcpLevel}` });
+      const status = await mediaKeys.getStatusForPolicy({ minHdcpVersion: `${hdcpLevel}` });
 
       if (status === 'usable') {
         return hdcpLevel;
@@ -154,9 +154,9 @@ export function getCencKeySystemConfigurations(drmName) {
  */
 export function extractPlayreadyDrmInfoFromCapabilities(capabilities) {
   return {
-    drmName: 'playready',
-    drmSecurity: capabilities.keySystem.includes('hardware') ? 'hardware' : 'software',
-    drmCanPersistState: capabilities.persistentState === 'required' ? 'yes' : 'no',
+    drmName: 'PlayReady',
+    drmSecurity: capabilities.keySystem.includes('hardware') ? 'Hardware' : 'Software',
+    drmCanPersistState: capabilities.persistentState === 'required' ? 'Yes' : 'No',
     hdcpLevel: capabilities.hdcpLevel,
   }
 }
@@ -171,9 +171,9 @@ export function extractWidevineDrmInfoFromCapabilities(capabilities) {
   const isHardware = capabilities.videoCapabilities[0].robustness === 'HW_SECURE_ALL';
 
   return {
-    drmName: 'widevine',
-    drmSecurity: isHardware ? 'hardware' : 'software',
-    drmCanPersistState: capabilities.persistentState === 'required' ? 'yes' : 'no',
+    drmName: 'Widevine',
+    drmSecurity: isHardware ? 'Hardware' : 'Software',
+    drmCanPersistState: capabilities.persistentState === 'required' ? 'Yes' : 'No',
     hdcpLevel: capabilities.hdcpLevel,
   }
 }
@@ -238,9 +238,9 @@ export async function getFairplayInfos() {
   if (!isFairplaySupported) return null;
 
   return {
-    drmName: 'fairplay',
-    drmSecurity: 'hardware',
-    drmCanPersistState: 'yes',
+    drmName: 'FairPlay',
+    drmSecurity: 'Hardware',
+    drmCanPersistState: 'Yes',
     hdcpLevel: 'Unable to detect',
   }
 }
